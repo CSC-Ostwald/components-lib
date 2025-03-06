@@ -1,0 +1,1 @@
+"use strict";const n={},c={render:({children:e,styles:t})=>React.createElement("div",null,React.createElement("style",null,t),e)},s=()=>React.createElement("div",null,"Test"),r={render:()=>React.createElement(s,null)},l={root:c,categories:n,components:{Test:r}};module.exports=l;

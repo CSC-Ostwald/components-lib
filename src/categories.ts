@@ -1,3 +1,8 @@
 import { type Config } from '@measured/puck';
 
-export default {} satisfies Config['categories'];
+export const categories: Config['categories'] = {
+    text: {
+        title: 'Text',
+        components: ['Text'],
+    },
+};

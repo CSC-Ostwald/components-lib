@@ -30,5 +30,8 @@
     "@measured/puck": "latest",
     "react": "latest",
     "react-dom": "latest"
+  },
+  "dependencies": {
+    "vitest": "^3.0.8"
   }
 }

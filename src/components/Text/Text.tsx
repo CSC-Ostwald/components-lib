@@ -1,8 +1,12 @@
 import type { PropsWithChildren } from "react";
 
-export default function Text({ children }: PropsWithChildren) {
+export interface TextProps extends PropsWithChildren {
+    color?: string;
+}
+
+export default function Text({ children, color = 'black' }: TextProps) {
     return (
-        <p style={{ color: 'red' }}>
+        <p style={{ color: color }}>
             {children}
         </p>
     )

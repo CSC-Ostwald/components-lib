@@ -32,8 +32,13 @@
     --font-letter-spacing: 0.0375rem;
 }
 
+@font-face {
+    font-family: Wedges;
+    src: url('src/utilities/Theme/fonts/Wedges.ttf');
+}
+
 body {
-    font-family: 'Roboto', monospace;
+    font-family: Wedges, monospace;
     margin: 0;
     padding: 0;
 }

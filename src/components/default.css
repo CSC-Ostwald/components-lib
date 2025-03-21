@@ -37,8 +37,13 @@
     src: url('src/utilities/Theme/fonts/Wedges.ttf');
 }
 
+@font-face {
+    font-family: a-day-without-sun;
+    src: url('src/utilities/Theme/fonts/A_day_without_sun.otf');
+}
+
 body {
-    font-family: Wedges, monospace;
+    font-family: a-day-without-sun, monospace;
     margin: 0;
     padding: 0;
 }

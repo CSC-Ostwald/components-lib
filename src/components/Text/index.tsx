@@ -1,4 +1,5 @@
 import { type Config } from '@measured/puck';
+import { theme } from '../Theme/theme';
 import Text from './Text';
 
 export default {
@@ -10,12 +11,7 @@ export default {
         color: {
             type: 'select',
             label: 'Text color',
-            options: [
-                { value: 'black', label: 'Black' },
-                { value: 'red', label: 'Red' },
-                { value: 'blue', label: 'Blue' },
-                { value: 'green', label: 'Green' },
-            ],
+            options: theme.colors,
         }
     },
     render: ({ content, color }) => <Text color={color} >{content}</Text>,

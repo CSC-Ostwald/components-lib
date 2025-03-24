@@ -12,7 +12,12 @@ export default {
             type: 'select',
             label: 'Text color',
             options: theme.colors,
+        },
+        fontFamily: {
+            type: 'select',
+            label: 'Font family',
+            options: theme.fonts,
         }
     },
-    render: ({ content, color }) => <Text color={color} >{content}</Text>,
+    render: ({ content, color, fontFamily }) => <Text color={color} fontFamily={fontFamily} >{content}</Text>,
 } satisfies Config['components']['key'];

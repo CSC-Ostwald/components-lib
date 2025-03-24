@@ -7,19 +7,6 @@
     --spacing-radius-3: 0.75rem;
     --spacing-radius-100: 100%;
 
-    --palette-primary: #007bff;
-    --palette-primary-light: #4da6ff;
-    --palette-text: #222222;
-    --palette-text-disabled: #707070;
-    --palette-background: #f0f0f0;
-    --palette-background-disabled: #d2d2d2;
-    --palette-paper: #fcfcfc;
-    --palette-border: #707070;
-    --palette-border-disabled: #b2b2b2;
-    --palette-shadow: #00000050;
-    --palette-shadow-light: #00000020;
-    --palette-error: #b62929;
-
     --font-weight-light: 300;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
@@ -33,17 +20,17 @@
 }
 
 @font-face {
-    font-family: Wedges;
-    src: url('src/utilities/Theme/fonts/Wedges.ttf');
+    font-family: wedges;
+    src: url('src/components/Theme/fonts/Wedges.ttf');
 }
 
 @font-face {
     font-family: a-day-without-sun;
-    src: url('src/utilities/Theme/fonts/A_day_without_sun.otf');
+    src: url('src/components/Theme/fonts/A_day_without_sun.otf');
 }
 
 body {
-    font-family: a-day-without-sun, monospace;
+    font-family: 'Roboto', monospace;
     margin: 0;
     padding: 0;
 }

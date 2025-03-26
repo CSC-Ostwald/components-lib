@@ -21,8 +21,16 @@ export default {
         },
         fontSize: {
             type: 'custom',
-            render: ({ value, onChange }) => <FontSizeField value={value} onChange={onChange} />,
+            render: ({ onChange }) =>
+                <FontSizeField value={16} onChange={onChange} />,
         }
     },
-    render: ({ content, color, fontFamily }) => <Text color={color} fontFamily={fontFamily} >{content}</Text>,
+    render: ({ content, color, fontFamily, fontSize }) =>
+        <Text
+            color={color}
+            fontFamily={fontFamily}
+            fontSize={fontSize}
+        >
+            {content}
+        </Text>,
 } satisfies Config['components']['key'];

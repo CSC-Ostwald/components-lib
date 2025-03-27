@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function FontSizeField({ value, onChange }: { value: number, onChange: (v: number) => void }) {
+export default function FontSizeField({ value, onChange }: { value: number; onChange: (v: number) => void }) {
     const [internalValue, setInternalValue] = React.useState(value);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {

@@ -7,6 +7,7 @@
     "build": "vite build --mode production"
   },
   "devDependencies": {
+    "@eslint/js": "^9.23.0",
     "@measured/puck": "latest",
     "@storybook/addon-essentials": "^8",
     "@storybook/addon-interactions": "^8",
@@ -18,11 +19,18 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@vitejs/plugin-react": "latest",
-    "digital-lint": "github:digital-net-org/lint#1.0.0",
+    "digital-lint": "github:digital-net-org/lint",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "prettier": "^3.5.3",
     "react": "latest",
     "react-dom": "latest",
     "storybook": "^8",
     "typescript": "latest",
+    "typescript-eslint": "^8.28.0",
     "vite": "latest",
     "vite-plugin-dts": "latest"
   },

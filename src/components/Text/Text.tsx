@@ -4,15 +4,17 @@ export interface TextProps extends PropsWithChildren {
     color?: string;
     fontFamily?: string;
     fontSize?: number;
+    textAlign?: 'left' | 'right' | 'center' | 'justify';
 }
 
-export default function Text({ children, color = 'black', fontFamily = 'Roboto', fontSize }: TextProps) {
+export default function Text({ children, color, fontFamily, fontSize, textAlign }: TextProps) {
     return (
         <p
             style={{
                 color,
                 fontFamily,
                 fontSize,
+                textAlign,
             }}
         >
             {children}

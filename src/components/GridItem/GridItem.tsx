@@ -12,8 +12,8 @@ export default function GridItem({ columns, rows, ref }: GridItemProps) {
             ref={ref}
             zone="grid-item-zone"
             style={{
-                gridColumn: `span ${columns || 1}`,
-                gridRow: `span ${rows || 1}`,
+                gridColumn: `span ${columns}`,
+                gridRow: `span ${rows}`,
             }}
             disallow={['GridItem']}
         />

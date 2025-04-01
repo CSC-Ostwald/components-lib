@@ -11,8 +11,8 @@ export default function Grid({ columns, rows }: GridProps) {
             zone="grid-zone"
             style={{
                 display: 'grid',
-                gridTemplateColumns: `repeat(${columns || 1}, 1fr)`,
-                gridTemplateRows: `repeat(${rows || 1}, auto)`,
+                gridTemplateColumns: `repeat(${columns}, 1fr)`,
+                gridTemplateRows: `repeat(${rows}, auto)`,
             }}
             allow={['GridItem']}
         />

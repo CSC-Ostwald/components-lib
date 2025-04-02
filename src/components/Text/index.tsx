@@ -2,8 +2,11 @@ import { type Config } from '@measured/puck';
 import { theme } from '../Theme/theme';
 import Text from './Text';
 import { FontSizeField } from '../CustomFields';
+import { GridResolver } from '../../utilities/GridResolver';
 
 export default {
+    inline: true,
+    resolveFields: (data, { parent }) => GridResolver.resolve({ parent }),
     fields: {
         content: {
             type: 'textarea',

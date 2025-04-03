@@ -5,8 +5,6 @@ import { FontSizeField } from '../CustomFields';
 import { GridResolver } from '../../utilities/GridResolver';
 
 export default {
-    inline: true,
-    resolveFields: (data, { parent }) => GridResolver.resolve({ parent }),
     fields: {
         content: {
             type: 'textarea',
@@ -22,16 +20,20 @@ export default {
             label: 'Font family',
             options: theme.fonts,
         },
-        fontSize: {
-            type: 'custom',
-            render: ({ onChange }) => <FontSizeField value={16} onChange={onChange} />,
-        },
+        // fontSize: {
+        //     type: 'custom',
+        //     render: ({ onChange }) => <FontSizeField value={16} onChange={onChange} />,
+        // },
         textAlign: {
             type: 'select',
             label: 'Alignement',
             options: theme.textAligns,
         },
     },
+
+    inline: true,
+    resolveFields: GridResolver.resolve,
+
     render: ({ content, color = 'black', fontFamily = 'Roboto', fontSize, textAlign = 'left' }) => (
         <Text color={color} fontFamily={fontFamily} fontSize={fontSize} textAlign={textAlign}>
             {content}

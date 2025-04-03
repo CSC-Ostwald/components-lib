@@ -14,7 +14,6 @@ export default function Grid({ columns, rows }: GridProps) {
                 gridTemplateColumns: `repeat(${columns}, 1fr)`,
                 gridTemplateRows: `repeat(${rows}, auto)`,
             }}
-            allow={['GridItem']}
         />
     );
 }

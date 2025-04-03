@@ -1,12 +1,12 @@
 export default class GridResolver {
-    static resolve = ({ parent }) => {
-        const fields = {
-            columns: { type: 'number', label: 'nombre de colonnes' },
-            rows: { type: 'number', label: 'nombre de lignes' },
-        };
-
+    static resolve = (data, { parent, fields }) => {
         if (parent?.type === 'Grid') {
-            return fields;
-        } else return;
+            return {
+                ...fields,
+                columns: { type: 'number', label: 'Nombre de colonnes' },
+                rows: { type: 'number', label: 'Nombre de lignes' },
+            };
+        }
+        return fields;
     };
 }

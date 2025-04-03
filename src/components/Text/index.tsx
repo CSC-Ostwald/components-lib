@@ -31,18 +31,28 @@ export default {
         },
     },
 
-    // inline: true,
+    inline: true,
     resolveFields: GridResolver.resolve,
 
     render: ({
-        id,
+        puck,
         content = 'Votre texte ...',
         color = 'black',
         fontFamily = 'Roboto',
         fontSize,
         textAlign = 'left',
+        columns = 1,
+        rows = 1,
     }) => (
-        <Text key={id} color={color} fontFamily={fontFamily} fontSize={fontSize} textAlign={textAlign}>
+        <Text
+            ref={puck.dragRef}
+            columns={columns}
+            rows={rows}
+            color={color}
+            fontFamily={fontFamily}
+            fontSize={fontSize}
+            textAlign={textAlign}
+        >
             {content}
         </Text>
     ),

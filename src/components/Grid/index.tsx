@@ -12,5 +12,5 @@ export default {
             label: 'Nombre de lignes',
         },
     },
-    render: ({ columns = 2, rows = 2 }) => <Grid columns={columns} rows={rows}></Grid>,
+    render: ({ columns, rows }) => <Grid columns={columns} rows={rows}></Grid>,
 } satisfies Config['components']['key'];

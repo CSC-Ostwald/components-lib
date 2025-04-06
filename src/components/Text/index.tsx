@@ -2,7 +2,7 @@ import { type Config } from '@measured/puck';
 import { theme } from '../Theme/theme';
 import Text from './Text';
 import { FontSizeField } from '../CustomFields';
-import { GridResolver } from '../../utilities/GridResolver';
+import { ParentResolver } from '../../utilities/ParentResolver';
 
 export default {
     fields: {
@@ -32,7 +32,7 @@ export default {
     },
 
     inline: true,
-    resolveFields: GridResolver.resolve,
+    resolveFields: ParentResolver.resolve,
 
     render: ({
         puck,

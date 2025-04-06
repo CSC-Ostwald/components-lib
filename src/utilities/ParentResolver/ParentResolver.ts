@@ -7,7 +7,7 @@ export default class ParentResolver {
                 ...fields,
             };
         }
-        if (parent?.type === 'FlexContainer') {
+        if (parent?.type === 'FlexBox') {
             return {
                 flexGrow: { type: 'number' },
                 flexShrink: { type: 'number' },

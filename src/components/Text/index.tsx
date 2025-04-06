@@ -43,12 +43,18 @@ export default {
         textAlign = 'left',
         columns = 1,
         rows = 1,
+        flexGrow = 1,
+        flexShrink = 1,
+        flexBasis = 'auto',
     }) => (
         <Text
             ref={puck.dragRef}
             columns={columns}
             rows={rows}
             color={color}
+            flexGrow={flexGrow}
+            flexShrink={flexShrink}
+            flexBasis={flexBasis}
             fontFamily={fontFamily}
             fontSize={fontSize}
             textAlign={textAlign}

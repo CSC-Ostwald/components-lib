@@ -7,6 +7,6 @@ export const categories: Config['categories'] = {
     },
     container: {
         title: 'Conteneurs',
-        components: ['FlexBox', 'Grid', 'GridItem'],
+        components: ['FlexBox', 'Grid'],
     },
 };

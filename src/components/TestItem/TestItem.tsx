@@ -26,15 +26,15 @@ export default function TestItem({
         <div
             ref={ref}
             style={{
-                gridColumn: `span ${columns || 1}`,
-                gridRow: `span ${rows || 1}`,
-                flexGrow: flexGrow ?? 1,
-                flexShrink: flexShrink ?? 1,
-                flexBasis: flexBasis ?? 'auto',
+                gridColumn: columns,
+                gridRow: rows,
+                flexGrow,
+                flexShrink,
+                flexBasis,
                 backgroundColor: '#F0F',
                 border: '3px solid #000',
-                minWidth: minWidth ?? 100,
-                minHeight: minHeight ?? 100,
+                minWidth,
+                minHeight,
             }}
         >
             {children}

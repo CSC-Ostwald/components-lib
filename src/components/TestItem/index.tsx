@@ -14,19 +14,18 @@ export default {
         },
     },
 
+    defaultProps: {
+        minWidth: 100,
+        minHeight: 100,
+        flexGrow: 1,
+        flexShrink: 1,
+        flexBasis: 'auto',
+    },
+
     inline: true,
     resolveFields: ParentResolver.resolve,
 
-    render: ({
-        puck,
-        minWidth,
-        minHeight,
-        columns = 1,
-        rows = 1,
-        flexGrow = 1,
-        flexShrink = 1,
-        flexBasis = 'auto',
-    }) => (
+    render: ({ puck, minWidth, minHeight, columns, rows, flexGrow, flexShrink, flexBasis }) => (
         <TestItem
             ref={puck.dragRef}
             columns={columns}

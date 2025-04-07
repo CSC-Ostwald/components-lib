@@ -12,5 +12,11 @@ export default {
             label: 'Nombre de lignes',
         },
     },
+
+    defaultProps: {
+        columns: 1,
+        rows: 1,
+    },
+
     render: ({ columns, rows }) => <Grid columns={columns} rows={rows}></Grid>,
 } satisfies Config['components']['key'];

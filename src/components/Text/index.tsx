@@ -31,21 +31,28 @@ export default {
         },
     },
 
+    defaultProps: {
+        content: 'Votre texte ...',
+        color: 'black',
+        fontFamily: 'Roboto',
+        textAlign: 'left',
+    },
+
     inline: true,
     resolveFields: ParentResolver.resolve,
 
     render: ({
         puck,
-        content = 'Votre texte ...',
-        color = 'black',
-        fontFamily = 'Roboto',
+        content,
+        color,
+        fontFamily,
         fontSize,
-        textAlign = 'left',
-        columns = 1,
-        rows = 1,
-        flexGrow = 1,
-        flexShrink = 1,
-        flexBasis = 'auto',
+        textAlign,
+        columns,
+        rows,
+        flexGrow,
+        flexShrink,
+        flexBasis,
     }) => (
         <Text
             ref={puck.dragRef}

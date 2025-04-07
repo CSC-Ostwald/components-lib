@@ -30,11 +30,11 @@ export default function Text({
         <p
             ref={ref}
             style={{
-                gridColumn: `span ${columns || 1}`,
-                gridRow: `span ${rows || 1}`,
-                flexGrow: flexGrow ?? 1,
-                flexShrink: flexShrink ?? 1,
-                flexBasis: flexBasis ?? 'auto',
+                gridColumn: columns,
+                gridRow: rows,
+                flexGrow,
+                flexShrink,
+                flexBasis,
                 color,
                 fontFamily,
                 fontSize,

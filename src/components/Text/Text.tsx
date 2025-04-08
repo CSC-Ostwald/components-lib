@@ -1,12 +1,7 @@
 import type { PropsWithChildren } from 'react';
+import { ChildrenTemplateType } from '../../utilities/ChildrenTemplate';
 
-export interface TextProps extends PropsWithChildren {
-    ref?: ((element: Element | null) => void) | null;
-    columns?: number;
-    rows?: number;
-    flexGrow?: number;
-    flexShrink?: number;
-    flexBasis?: string;
+export interface TextProps extends PropsWithChildren, ChildrenTemplateType {
     color?: string;
     fontFamily?: string;
     fontSize?: number;

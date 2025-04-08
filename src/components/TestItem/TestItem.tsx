@@ -1,12 +1,7 @@
 import type { PropsWithChildren } from 'react';
+import type { ChildrenTemplateType } from '../../utilities/ChildrenTemplate';
 
-export interface TextProps extends PropsWithChildren {
-    ref?: ((element: Element | null) => void) | null;
-    columns?: number;
-    rows?: number;
-    flexGrow?: number;
-    flexShrink?: number;
-    flexBasis?: string;
+export interface TestItemProps extends PropsWithChildren, ChildrenTemplateType {
     minWidth?: number;
     minHeight?: number;
 }
@@ -21,13 +16,13 @@ export default function TestItem({
     flexGrow,
     minHeight,
     minWidth,
-}: TextProps) {
+}: TestItemProps) {
     return (
         <div
             ref={ref}
             style={{
-                gridColumn: columns,
-                gridRow: rows,
+                gridColumn: `span ${columns}`,
+                gridRow: `span ${rows}`,
                 flexGrow,
                 flexShrink,
                 flexBasis,

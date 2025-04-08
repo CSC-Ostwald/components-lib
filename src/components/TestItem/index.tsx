@@ -15,11 +15,9 @@ export default {
     },
 
     defaultProps: {
+        ...ParentResolver.defaultProps(),
         minWidth: 100,
         minHeight: 100,
-        flexGrow: 1,
-        flexShrink: 1,
-        flexBasis: 'auto',
     },
 
     inline: true,

@@ -17,4 +17,12 @@ export default class ParentResolver {
         }
         return fields;
     };
+
+    static defaultProps = () => {
+        return {
+            flexGrow: 1,
+            flexShrink: 1,
+            flexBasis: 'auto',
+        };
+    };
 }

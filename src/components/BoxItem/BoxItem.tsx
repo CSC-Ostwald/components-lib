@@ -9,7 +9,7 @@ export interface BoxItemType extends PropsWithChildren {
     flexBasis?: string;
 }
 
-function BoxItem({ children, ref, columns, rows, flexShrink, flexGrow, flexBasis }: BoxItemType) {
+export default function BoxItem({ children, ref, columns, rows, flexShrink, flexGrow, flexBasis }: BoxItemType) {
     return (
         <div
             ref={ref}

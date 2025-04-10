@@ -23,16 +23,7 @@ export default {
     inline: true,
     resolveFields: ParentResolver.resolve,
 
-    render: ({ puck, minWidth, minHeight, columns, rows, flexGrow, flexShrink, flexBasis }) => (
-        <TestItem
-            ref={puck.dragRef}
-            columns={columns}
-            rows={rows}
-            flexGrow={flexGrow}
-            flexShrink={flexShrink}
-            flexBasis={flexBasis}
-            minHeight={minHeight}
-            minWidth={minWidth}
-        />
+    render: ({ puck, minWidth, minHeight }) => (
+        <TestItem ref={puck.dragRef} minWidth={minWidth} minHeight={minHeight} />
     ),
 } satisfies Config['components']['key'];

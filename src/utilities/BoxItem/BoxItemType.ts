@@ -1,4 +1,4 @@
-export type ChildrenTemplateType = {
+export type BoxItemType = {
     ref?: ((element: Element | null) => void) | null;
     columns?: number;
     rows?: number;

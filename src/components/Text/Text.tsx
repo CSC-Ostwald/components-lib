@@ -1,7 +1,7 @@
 import type { PropsWithChildren } from 'react';
-import { ChildrenTemplateType } from '../../utilities/ChildrenTemplate';
+import { BoxItemType } from '../../utilities/BoxItem';
 
-export interface TextProps extends PropsWithChildren, ChildrenTemplateType {
+export interface TextProps extends PropsWithChildren, BoxItemType {
     color?: string;
     fontFamily?: string;
     fontSize?: number;

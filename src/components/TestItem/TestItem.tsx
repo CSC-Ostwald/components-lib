@@ -1,7 +1,7 @@
 import type { PropsWithChildren } from 'react';
-import type { ChildrenTemplateType } from '../../utilities/ChildrenTemplate';
+import type { BoxItemType } from '../../utilities/BoxItem';
 
-export interface TestItemProps extends PropsWithChildren, ChildrenTemplateType {
+export interface TestItemProps extends PropsWithChildren, BoxItemType {
     minWidth?: number;
     minHeight?: number;
 }

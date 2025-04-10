@@ -17,7 +17,7 @@ export default {
     defaultProps: {
         ...ParentResolver.defaultProps(),
         minWidth: 100,
-        minHeight: 100,
+        minHeight: 150,
     },
 
     inline: true,

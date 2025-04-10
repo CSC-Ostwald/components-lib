@@ -10,7 +10,7 @@ export interface BoxItemType {
     itemChildren?: React.ReactNode;
 }
 
-export default function BoxItem({ itemChildren, ref, columns, rows, flexShrink, flexGrow, flexBasis }: BoxItemType) {
+export default function BoxItem({ itemChildren, columns, rows, flexShrink, flexGrow, flexBasis, ref }: BoxItemType) {
     return (
         <div
             ref={ref}

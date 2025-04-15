@@ -23,7 +23,5 @@ export default {
     inline: true,
     resolveFields: ParentResolver.resolve,
 
-    render: ({ puck, minWidth, minHeight, ...boxItemProps }) => (
-        <TestItem ref={puck.dragRef} minWidth={minWidth} minHeight={minHeight} {...boxItemProps} />
-    ),
+    render: ({ puck, ...fields }) => <TestItem ref={puck.dragRef} {...fields} />,
 } satisfies Config['components']['key'];

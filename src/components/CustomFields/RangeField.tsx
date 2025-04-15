@@ -1,7 +1,16 @@
 import React from 'react';
 
-export default function FontSizeField({ value, onChange }: { value: number; onChange: (v: number) => void }) {
-    const [internalValue, setInternalValue] = React.useState(value);
+export interface RangeFieldProps {
+    baseValue: number;
+    onChange: (value: number) => void;
+    minValue?: number;
+    maxValue?: number;
+    step?: number;
+    label?: string;
+}
+
+export default function RangeField({ baseValue, onChange, minValue, maxValue, step, label }: RangeFieldProps) {
+    const [internalValue, setInternalValue] = React.useState(baseValue);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const newValue = Number(e.target.value);
@@ -11,14 +20,13 @@ export default function FontSizeField({ value, onChange }: { value: number; onCh
 
     return (
         <>
-            <label>Font size</label>
+            <label>{label || ''}</label>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <input
                     type="range"
-                    min="8"
-                    max="72"
-                    step="2"
-                    defaultValue="16"
+                    min={minValue || 0}
+                    max={maxValue || 100}
+                    step={step || 1}
                     value={internalValue}
                     onChange={handleChange}
                 />

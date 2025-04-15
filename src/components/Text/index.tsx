@@ -1,7 +1,7 @@
 import { type Config } from '@measured/puck';
 import { theme } from '../Theme/theme';
 import Text from './Text';
-import { FontSizeField } from '../CustomFields';
+import { RangeField } from '../CustomFields';
 import { ParentResolver } from '../../utilities/ParentResolver';
 
 export default {
@@ -27,7 +27,16 @@ export default {
         },
         fontSize: {
             type: 'custom',
-            render: ({ onChange }) => <FontSizeField value={16} onChange={onChange} />,
+            render: ({ onChange }) => (
+                <RangeField
+                    baseValue={16}
+                    onChange={onChange}
+                    minValue={6}
+                    maxValue={72}
+                    step={2}
+                    label={'Font size'}
+                />
+            ),
         },
         textAlign: {
             type: 'select',

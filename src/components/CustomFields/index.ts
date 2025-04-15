@@ -1,1 +1,1 @@
-export { default as FontSizeField } from './FontSizeField';
+export { default as RangeField } from './RangeField';

@@ -1,5 +1,5 @@
 import type { PropsWithChildren } from 'react';
-import { BoxItemType } from '../BoxItem';
+import { BoxItem, type BoxItemType } from '../BoxItem';
 
 export interface TextProps extends PropsWithChildren, BoxItemType {
     color?: string;
@@ -8,35 +8,19 @@ export interface TextProps extends PropsWithChildren, BoxItemType {
     textAlign?: 'left' | 'right' | 'center' | 'justify';
 }
 
-export default function Text({
-    children,
-    ref,
-    columns,
-    rows,
-    flexGrow,
-    flexShrink,
-    flexBasis,
-    color,
-    fontFamily,
-    fontSize,
-    textAlign,
-}: TextProps) {
+export default function Text({ children, color, fontFamily, fontSize, textAlign, ...boxItemProps }: TextProps) {
     return (
-        <p
-            ref={ref}
-            style={{
-                gridColumn: columns,
-                gridRow: rows,
-                flexGrow,
-                flexShrink,
-                flexBasis,
-                color,
-                fontFamily,
-                fontSize,
-                textAlign,
-            }}
-        >
-            {children}
-        </p>
+        <BoxItem {...boxItemProps}>
+            <p
+                style={{
+                    color,
+                    fontFamily,
+                    fontSize,
+                    textAlign,
+                }}
+            >
+                {children}
+            </p>
+        </BoxItem>
     );
 }

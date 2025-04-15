@@ -6,11 +6,9 @@ export interface TestItemProps extends PropsWithChildren, BoxItemType {
     minHeight?: number;
 }
 
-export default function TestItem({ children, minHeight, minWidth, ...rest }: TestItemProps) {
-    const { ref, ...boxItemProps } = rest;
-
+export default function TestItem({ children, minHeight, minWidth, ...boxItemProps }: TestItemProps) {
     return (
-        <BoxItem ref={ref} {...boxItemProps}>
+        <BoxItem {...boxItemProps}>
             <div
                 style={{
                     backgroundColor: '#F0F',

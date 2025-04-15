@@ -32,6 +32,7 @@ export default {
     },
 
     defaultProps: {
+        ...ParentResolver.defaultProps(),
         content: 'Votre texte ...',
         color: 'black',
         fontFamily: 'Roboto',
@@ -41,31 +42,8 @@ export default {
     inline: true,
     resolveFields: ParentResolver.resolve,
 
-    render: ({
-        puck,
-        content,
-        color,
-        fontFamily,
-        fontSize,
-        textAlign,
-        columns,
-        rows,
-        flexGrow,
-        flexShrink,
-        flexBasis,
-    }) => (
-        <Text
-            ref={puck.dragRef}
-            columns={columns}
-            rows={rows}
-            color={color}
-            flexGrow={flexGrow}
-            flexShrink={flexShrink}
-            flexBasis={flexBasis}
-            fontFamily={fontFamily}
-            fontSize={fontSize}
-            textAlign={textAlign}
-        >
+    render: ({ puck, content, ...fields }) => (
+        <Text ref={puck.dragRef} {...fields}>
             {content}
         </Text>
     ),

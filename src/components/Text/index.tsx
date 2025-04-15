@@ -15,6 +15,11 @@ export default {
             label: 'Text color',
             options: theme.colors,
         },
+        backgroundColor: {
+            type: 'select',
+            label: 'Background color',
+            options: theme.backgroundColors,
+        },
         fontFamily: {
             type: 'select',
             label: 'Font family',
@@ -35,6 +40,7 @@ export default {
         ...ParentResolver.defaultProps(),
         content: 'Votre texte ...',
         color: 'black',
+        backgroundColor: 'none',
         fontFamily: 'Roboto',
         textAlign: 'left',
     },

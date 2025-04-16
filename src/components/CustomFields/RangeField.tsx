@@ -27,7 +27,7 @@ export default function RangeField({ baseValue, onChange, minValue, maxValue, st
                     min={minValue || 0}
                     max={maxValue || 100}
                     step={step || 1}
-                    value={internalValue}
+                    defaultValue={internalValue}
                     onChange={handleChange}
                 />
                 <span>{internalValue}px</span>

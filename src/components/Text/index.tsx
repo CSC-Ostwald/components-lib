@@ -29,7 +29,7 @@ export default {
             type: 'custom',
             render: ({ onChange }) => (
                 <RangeField
-                    baseValue={16}
+                    baseValue={12}
                     onChange={onChange}
                     minValue={6}
                     maxValue={72}
@@ -42,6 +42,18 @@ export default {
             type: 'select',
             label: 'Alignement',
             options: theme.textAligns,
+        },
+        margin: {
+            type: 'custom',
+            render: ({ onChange }) => (
+                <RangeField baseValue={24} onChange={onChange} minValue={0} maxValue={72} step={2} label={'Margin'} />
+            ),
+        },
+        padding: {
+            type: 'custom',
+            render: ({ onChange }) => (
+                <RangeField baseValue={2} onChange={onChange} minValue={0} maxValue={72} step={2} label={'Padding'} />
+            ),
         },
     },
 

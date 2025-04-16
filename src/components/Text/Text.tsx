@@ -7,6 +7,8 @@ export interface TextProps extends PropsWithChildren, BoxItemType {
     fontFamily?: string;
     fontSize?: number;
     textAlign?: 'left' | 'right' | 'center' | 'justify';
+    margin?: number;
+    padding?: number;
 }
 
 export default function Text({
@@ -16,6 +18,8 @@ export default function Text({
     fontFamily,
     fontSize,
     textAlign,
+    margin,
+    padding,
     ...boxItemProps
 }: TextProps) {
     return (
@@ -27,6 +31,8 @@ export default function Text({
                     fontFamily,
                     fontSize,
                     textAlign,
+                    margin,
+                    padding,
                 }}
             >
                 {children}

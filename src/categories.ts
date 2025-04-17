@@ -9,4 +9,8 @@ export const categories: Config['categories'] = {
         title: 'Conteneurs',
         components: ['FlexBox', 'Grid'],
     },
+    button: {
+        title: 'Boutons',
+        components: ['Button'],
+    },
 };

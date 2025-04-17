@@ -4,7 +4,7 @@ import Text from './Text';
 import { RangeField } from '../CustomFields';
 import { ParentResolver } from '../../utilities/ParentResolver';
 
-export default {
+const TextConfig = {
     fields: {
         content: {
             type: 'textarea',
@@ -29,7 +29,7 @@ export default {
             type: 'custom',
             render: ({ onChange }) => (
                 <RangeField
-                    baseValue={12}
+                    baseValue={TextConfig.defaultProps.fontSize}
                     onChange={onChange}
                     minValue={6}
                     maxValue={72}
@@ -46,13 +46,27 @@ export default {
         margin: {
             type: 'custom',
             render: ({ onChange }) => (
-                <RangeField baseValue={24} onChange={onChange} minValue={0} maxValue={72} step={2} label={'Margin'} />
+                <RangeField
+                    baseValue={TextConfig.defaultProps.margin}
+                    onChange={onChange}
+                    minValue={0}
+                    maxValue={72}
+                    step={2}
+                    label={'Margin'}
+                />
             ),
         },
         padding: {
             type: 'custom',
             render: ({ onChange }) => (
-                <RangeField baseValue={2} onChange={onChange} minValue={0} maxValue={72} step={2} label={'Padding'} />
+                <RangeField
+                    baseValue={TextConfig.defaultProps.padding}
+                    onChange={onChange}
+                    minValue={0}
+                    maxValue={72}
+                    step={2}
+                    label={'Padding'}
+                />
             ),
         },
     },
@@ -61,8 +75,11 @@ export default {
         ...ParentResolver.defaultProps(),
         content: 'Votre texte ...',
         color: 'black',
-        backgroundColor: 'none',
+        backgroundColor: 'transparent',
         fontFamily: 'Roboto',
+        fontSize: 16,
+        margin: 0,
+        padding: 0,
         textAlign: 'left',
     },
 
@@ -75,3 +92,5 @@ export default {
         </Text>
     ),
 } satisfies Config['components']['key'];
+
+export default TextConfig;

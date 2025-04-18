@@ -1,6 +1,7 @@
 export const theme = {
     colors: [
         { value: 'black', label: 'Noir' },
+        { value: 'white', label: 'Blanc' },
         { value: '#58b30d', label: 'Vert' },
         { value: '#ee951b', label: 'Orange' },
         { value: '#0132cc', label: 'Bleu' },

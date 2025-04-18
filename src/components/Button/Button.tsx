@@ -9,6 +9,7 @@ export interface ButtonProps extends PropsWithChildren, BoxItemType {
     fontSize?: number;
     margin?: number;
     padding?: number;
+    borderRadius?: number;
 }
 
 export default function Button({
@@ -20,6 +21,7 @@ export default function Button({
     fontSize,
     margin,
     padding,
+    borderRadius,
     ...boxItemProps
 }: ButtonProps) {
     return (
@@ -34,6 +36,7 @@ export default function Button({
                         fontSize,
                         margin,
                         padding,
+                        borderRadius,
                         textDecoration: 'none',
                         placeContent: 'center',
                     }}

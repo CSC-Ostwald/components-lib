@@ -68,6 +68,19 @@ const ButtonConfig = {
                 />
             ),
         },
+        borderRadius: {
+            type: 'custom',
+            render: ({ onChange }) => (
+                <RangeField
+                    baseValue={ButtonConfig.defaultProps.borderRadius}
+                    onChange={onChange}
+                    minValue={0}
+                    maxValue={72}
+                    step={2}
+                    label={'Border radius'}
+                />
+            ),
+        },
     },
 
     defaultProps: {
@@ -79,6 +92,7 @@ const ButtonConfig = {
         fontSize: 16,
         margin: 0,
         padding: 0,
+        borderRadius: 0,
     },
 
     inline: true,

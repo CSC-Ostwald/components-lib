@@ -1,5 +1,5 @@
 import { type Config } from '@measured/puck';
-import { theme } from '../Theme/theme';
+import { properties, theme } from '../Theme';
 import Text from './Text';
 import { RangeField } from '../CustomFields';
 import { ParentResolver } from '../../utilities/ParentResolver';
@@ -11,7 +11,7 @@ const TextConfig = {
             label: 'Content',
         },
         color: {
-            type: 'select',
+            type: properties.color.type,
             label: 'Text color',
             options: theme.colors,
         },

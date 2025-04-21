@@ -1,17 +1,12 @@
 import { type Config } from '@measured/puck';
 import TestItem from './TestItem';
 import { ParentResolver } from '../../utilities/ParentResolver';
+import { properties } from '../Theme';
 
 export default {
     fields: {
-        minWidth: {
-            type: 'number',
-            label: 'Largeur minimum',
-        },
-        minHeight: {
-            type: 'number',
-            label: 'Hauteur minimum',
-        },
+        minWidth: properties.minWidth,
+        minHeight: properties.minHeight,
     },
 
     defaultProps: {

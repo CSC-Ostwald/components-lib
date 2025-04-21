@@ -1,6 +1,6 @@
 import { theme } from './theme';
 import { Fields } from '@measured/puck';
-import { type Config } from '@measured/puck';
+import { RangeField } from '../CustomFields';
 
 export const properties = {
     // CONTENT
@@ -31,5 +31,15 @@ export const properties = {
         type: 'select',
         label: 'Alignement',
         options: theme.textAligns,
+    },
+
+    // MARGIN, PADDING AND SIZES
+    minWidth: {
+        type: 'number',
+        label: 'Largeur minimum',
+    },
+    minHeight: {
+        type: 'number',
+        label: 'Hauteur minimum',
     },
 } as const satisfies Fields;

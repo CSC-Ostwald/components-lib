@@ -6,25 +6,10 @@ import { ParentResolver } from '../../utilities/ParentResolver';
 
 const TextConfig = {
     fields: {
-        content: {
-            type: 'textarea',
-            label: 'Content',
-        },
-        color: {
-            type: properties.color.type,
-            label: 'Text color',
-            options: theme.colors,
-        },
-        backgroundColor: {
-            type: 'select',
-            label: 'Background color',
-            options: theme.backgroundColors,
-        },
-        fontFamily: {
-            type: 'select',
-            label: 'Font family',
-            options: theme.fonts,
-        },
+        content: properties.content,
+        color: properties.color,
+        backgroundColor: properties.backgroundColor,
+        fontFamily: properties.fontFamily,
         fontSize: {
             type: 'custom',
             render: ({ onChange }) => (
@@ -38,11 +23,7 @@ const TextConfig = {
                 />
             ),
         },
-        textAlign: {
-            type: 'select',
-            label: 'Alignement',
-            options: theme.textAligns,
-        },
+        textAlign: properties.textAlign,
         margin: {
             type: 'custom',
             render: ({ onChange }) => (

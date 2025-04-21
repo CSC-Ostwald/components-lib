@@ -1,5 +1,6 @@
 import { theme } from './theme';
 import { Fields } from '@measured/puck';
+import { type Config } from '@measured/puck';
 
 export const properties = {
     // CONTENT
@@ -31,4 +32,4 @@ export const properties = {
         label: 'Alignement',
         options: theme.textAligns,
     },
-};
+} as const satisfies Fields;

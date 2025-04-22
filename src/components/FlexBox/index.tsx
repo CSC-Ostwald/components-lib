@@ -1,26 +1,11 @@
 import { type Config } from '@measured/puck';
 import FlexBox from './FlexBox';
+import { properties } from '../Theme';
 
 export default {
     fields: {
-        flexDirection: {
-            type: 'select',
-            label: 'Direction',
-            options: [
-                { label: 'Colonne', value: 'column' },
-                { label: 'Ligne', value: 'row' },
-            ],
-        },
-        justifyContent: {
-            type: 'select',
-            label: 'Alignement',
-            options: [
-                { label: 'Start', value: 'start' },
-                { label: 'Center', value: 'center' },
-                { label: 'Space between', value: 'space-between' },
-                { label: 'Space around', value: 'space-around' },
-            ],
-        },
+        flexDirection: properties.flexDirection,
+        justifyContent: properties.justifyContent,
         backgroundImage: {
             type: 'select',
             label: 'Image de fond',

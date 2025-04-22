@@ -30,7 +30,12 @@ export const properties = {
     textAlign: {
         type: 'select',
         label: 'Alignement',
-        options: theme.textAligns,
+        options: [
+            { value: 'left', label: 'Gauche' },
+            { value: 'center', label: 'Centre' },
+            { value: 'right', label: 'Droite' },
+            { value: 'justify', label: 'Justifié' },
+        ],
     },
 
     // MARGIN, PADDING AND SIZES
@@ -41,5 +46,25 @@ export const properties = {
     minHeight: {
         type: 'number',
         label: 'Hauteur minimum',
+    },
+
+    // FLEX RELATED PROPERTIES
+    flexDirection: {
+        type: 'select',
+        label: 'Direction',
+        options: [
+            { label: 'Colonne', value: 'column' },
+            { label: 'Ligne', value: 'row' },
+        ],
+    },
+    justifyContent: {
+        type: 'select',
+        label: 'Alignement',
+        options: [
+            { label: 'Start', value: 'start' },
+            { label: 'Center', value: 'center' },
+            { label: 'Space between', value: 'space-between' },
+            { label: 'Space around', value: 'space-around' },
+        ],
     },
 } as const satisfies Fields;

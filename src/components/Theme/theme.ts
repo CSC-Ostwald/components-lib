@@ -21,10 +21,4 @@ export const theme = {
         { value: 'wedges', label: 'Titre' },
         { value: 'a-day-without-sun', label: 'Texte' },
     ],
-    textAligns: [
-        { value: 'left', label: 'Gauche' },
-        { value: 'center', label: 'Centre' },
-        { value: 'right', label: 'Droite' },
-        { value: 'justify', label: 'Justifié' },
-    ],
 };

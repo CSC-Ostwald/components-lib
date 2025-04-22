@@ -7,9 +7,19 @@ export interface BoxItemType extends PropsWithChildren {
     flexGrow?: number;
     flexShrink?: number;
     flexBasis?: string;
+    alignSelf?: string;
 }
 
-export default function BoxItem({ children, ref, columns, rows, flexShrink, flexGrow, flexBasis }: BoxItemType) {
+export default function BoxItem({
+    children,
+    ref,
+    columns,
+    rows,
+    flexShrink,
+    flexGrow,
+    flexBasis,
+    alignSelf,
+}: BoxItemType) {
     return (
         <div
             ref={ref}
@@ -19,6 +29,7 @@ export default function BoxItem({ children, ref, columns, rows, flexShrink, flex
                 flexGrow,
                 flexShrink,
                 flexBasis,
+                alignSelf,
             }}
         >
             {children}

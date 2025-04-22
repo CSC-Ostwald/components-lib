@@ -11,7 +11,7 @@ export default {
             label: 'Image de fond',
             options: [
                 { label: 'Aucune', value: '' },
-                { label: 'Image 1', value: 'https://cdn.pixabay.com/photo/2018/08/04/11/30/draw-3583548_1280.png' },
+                { label: 'Custom 1', value: 'src/components/Theme/icons/customBackground.svg' },
             ],
         },
     },

@@ -3,9 +3,10 @@ import { DropZone } from '@measured/puck';
 interface GridProps {
     columns?: number;
     rows?: number;
+    backgroundImage?: string;
 }
 
-export default function Grid({ columns, rows }: GridProps) {
+export default function Grid({ columns, rows, backgroundImage }: GridProps) {
     return (
         <DropZone
             zone="grid-zone"
@@ -13,6 +14,8 @@ export default function Grid({ columns, rows }: GridProps) {
                 display: 'grid',
                 gridTemplateColumns: `repeat(${columns}, 1fr)`,
                 gridTemplateRows: `repeat(${rows}, auto)`,
+                backgroundImage: `url(${backgroundImage})`,
+                backgroundSize: '100% 100%',
             }}
         />
     );

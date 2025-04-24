@@ -1,22 +1,19 @@
 import { type Config } from '@measured/puck';
+import { properties } from '../Theme';
 import Grid from './Grid';
 
 export default {
     fields: {
-        columns: {
-            type: 'number',
-            label: 'Nombre de colonnes',
-        },
-        rows: {
-            type: 'number',
-            label: 'Nombre de lignes',
-        },
+        columns: properties.columns,
+        rows: properties.rows,
+        backgroundImage: properties.backgroundImage,
     },
 
     defaultProps: {
         columns: 1,
         rows: 1,
+        backgroundImage: '',
     },
 
-    render: ({ columns, rows }) => <Grid columns={columns} rows={rows}></Grid>,
+    render: ({ ...fields }) => <Grid {...fields}></Grid>,
 } satisfies Config['components']['key'];

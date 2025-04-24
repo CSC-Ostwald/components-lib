@@ -16,6 +16,14 @@ export const theme = {
         { value: '#a17b44', label: 'Marron' },
         { value: '#d0443f', label: 'Rouge' },
     ],
+    backgroundImage: [
+        { label: 'Aucune', value: '' },
+        { label: 'Custom Vert', value: 'src/components/Theme/assets/customBackgroundGreen.svg' },
+        { label: 'Custom Brun', value: 'src/components/Theme/assets/customBackgroundBrown.svg' },
+        { label: 'Custom Bleu', value: 'src/components/Theme/assets/customBackgroundBlue.svg' },
+        { label: 'Custom Orange', value: 'src/components/Theme/assets/customBackgroundOrange.svg' },
+        { label: 'Custom Rouge', value: 'src/components/Theme/assets/customBackgroundRed.svg' },
+    ],
     fonts: [
         { value: 'Roboto', label: 'Default' },
         { value: 'wedges', label: 'Titre' },

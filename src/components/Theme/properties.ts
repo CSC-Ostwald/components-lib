@@ -9,7 +9,7 @@ export const properties = {
         label: 'Content',
     },
 
-    // COLOR PROPERTIES
+    // COLOR AND IMAGE PROPERTIES
     color: {
         type: 'select',
         label: 'Text color',
@@ -19,6 +19,11 @@ export const properties = {
         type: 'select',
         label: 'Background color',
         options: theme.backgroundColors,
+    },
+    backgroundImage: {
+        type: 'select',
+        label: 'Image de fond',
+        options: theme.backgroundImage,
     },
 
     // TEXT RELATED PROPERTIES
@@ -66,5 +71,15 @@ export const properties = {
             { label: 'Space between', value: 'space-between' },
             { label: 'Space around', value: 'space-around' },
         ],
+    },
+
+    // GRID RELATED PROPERTIES
+    columns: {
+        type: 'number',
+        label: 'Nombre de colonnes',
+    },
+    rows: {
+        type: 'number',
+        label: 'Nombre de lignes',
     },
 } as const satisfies Fields;

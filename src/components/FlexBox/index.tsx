@@ -11,7 +11,11 @@ export default {
             label: 'Image de fond',
             options: [
                 { label: 'Aucune', value: '' },
-                { label: 'Custom 1', value: 'src/components/Theme/icons/customBackground.svg' },
+                { label: 'Custom Vert', value: 'src/components/Theme/assets/customBackgroundGreen.svg' },
+                { label: 'Custom Brun', value: 'src/components/Theme/assets/customBackgroundBrown.svg' },
+                { label: 'Custom Bleu', value: 'src/components/Theme/assets/customBackgroundBlue.svg' },
+                { label: 'Custom Orange', value: 'src/components/Theme/assets/customBackgroundOrange.svg' },
+                { label: 'Custom Rouge', value: 'src/components/Theme/assets/customBackgroundRed.svg' },
             ],
         },
     },

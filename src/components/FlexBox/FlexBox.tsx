@@ -16,7 +16,7 @@ export default function FlexBox({ flexDirection, justifyContent, backgroundImage
                 flexDirection,
                 justifyContent,
                 backgroundImage: `url(${backgroundImage})`,
-                backgroundSize: 'cover',
+                backgroundSize: '100% 100%',
             }}
         />
     );

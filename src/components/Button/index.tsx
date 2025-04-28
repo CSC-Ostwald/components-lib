@@ -1,5 +1,5 @@
 import { type Config } from '@measured/puck';
-import { theme } from '../Theme/theme';
+import { theme } from '../../utilities/Theme/theme';
 import Button from './Button';
 import { RangeField } from '../CustomFields';
 import { ParentResolver } from '../../utilities/ParentResolver';

@@ -1,6 +1,10 @@
-import { theme } from './theme';
+import { theme } from '../../utilities';
 import { Fields } from '@measured/puck';
 import { RangeField } from '../CustomFields';
+
+export interface propertiesProps {
+    marginBaseValue: number;
+}
 
 export const properties = {
     // CONTENT
@@ -51,6 +55,12 @@ export const properties = {
     minHeight: {
         type: 'number',
         label: 'Hauteur minimum',
+    },
+    margin: {
+        type: 'custom',
+        render: ({ onChange }) => (
+            <RangeField baseValue={0} onChange={onChange} minValue={0} maxValue={72} step={2} label={'Margin'} />
+        ),
     },
 
     // FLEX RELATED PROPERTIES

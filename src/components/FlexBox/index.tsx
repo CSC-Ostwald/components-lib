@@ -1,6 +1,6 @@
 import { type Config } from '@measured/puck';
 import FlexBox from './FlexBox';
-import { properties } from '../Theme';
+import { properties } from '../../utilities/Theme';
 
 export default {
     fields: {

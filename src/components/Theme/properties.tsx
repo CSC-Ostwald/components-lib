@@ -2,10 +2,6 @@ import { theme } from '../../utilities';
 import { Fields } from '@measured/puck';
 import { RangeField } from '../CustomFields';
 
-export interface propertiesProps {
-    marginBaseValue: number;
-}
-
 export const properties = {
     // CONTENT
     content: {

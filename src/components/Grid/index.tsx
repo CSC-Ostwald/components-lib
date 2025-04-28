@@ -1,5 +1,5 @@
 import { type Config } from '@measured/puck';
-import { properties } from '../../utilities/Theme';
+import { properties } from '../Theme';
 import Grid from './Grid';
 
 export default {

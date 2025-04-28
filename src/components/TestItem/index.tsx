@@ -1,33 +1,19 @@
 import { type Config } from '@measured/puck';
 import TestItem from './TestItem';
 import { ParentResolver } from '../../utilities/ParentResolver';
-import { properties } from '../Theme/properties';
-import { RangeField } from '../CustomFields';
+import { properties } from '../Theme';
 
 const TestItemConfig = {
     fields: {
         minWidth: properties.minWidth,
         minHeight: properties.minHeight,
-        margin: {
-            type: 'custom',
-            render: ({ onChange }) => (
-                <RangeField
-                    baseValue={TestItemConfig.defaultProps.margin}
-                    onChange={onChange}
-                    minValue={0}
-                    maxValue={72}
-                    step={2}
-                    label={'Margin'}
-                />
-            ),
-        },
+        margin: properties.margin,
     },
 
     defaultProps: {
         ...ParentResolver.defaultProps(),
         minWidth: 100,
         minHeight: 150,
-        margin: 0,
     },
 
     inline: true,

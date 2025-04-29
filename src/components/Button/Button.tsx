@@ -28,26 +28,24 @@ export default function Button({
 }: ButtonProps) {
     return (
         <BoxItem {...boxItemProps}>
-            <div style={{ display: 'flex' }}>
-                <a
-                    href={href}
-                    style={{
-                        color,
-                        backgroundColor,
-                        backgroundImage: `url(${backgroundImage})`,
-                        backgroundSize: '100% 100%',
-                        fontFamily,
-                        fontSize,
-                        margin,
-                        padding,
-                        borderRadius,
-                        textDecoration: 'none',
-                        placeContent: 'center',
-                    }}
-                >
-                    {children}
-                </a>
-            </div>
+            <a
+                href={href}
+                style={{
+                    color,
+                    backgroundColor,
+                    backgroundImage: `url(${backgroundImage})`,
+                    backgroundSize: '100% 100%',
+                    fontFamily,
+                    fontSize,
+                    margin,
+                    padding,
+                    borderRadius,
+                    textDecoration: 'none',
+                    placeContent: 'center',
+                }}
+            >
+                {children}
+            </a>
         </BoxItem>
     );
 }

@@ -24,6 +24,7 @@ export default function BoxItem({
         <div
             ref={ref}
             style={{
+                display: 'flex',
                 gridColumn: `span ${columns}`,
                 gridRow: `span ${rows}`,
                 flexGrow,

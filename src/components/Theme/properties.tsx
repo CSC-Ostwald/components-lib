@@ -8,6 +8,10 @@ export const properties = {
         type: 'textarea',
         label: 'Content',
     },
+    href: {
+        type: 'text',
+        label: 'URL',
+    },
 
     // COLOR AND IMAGE PROPERTIES
     color: {
@@ -68,6 +72,12 @@ export const properties = {
         type: 'custom',
         render: ({ onChange }) => (
             <RangeField baseValue={0} onChange={onChange} minValue={0} maxValue={72} step={2} label={'Padding'} />
+        ),
+    },
+    borderRadius: {
+        type: 'custom',
+        render: ({ onChange }) => (
+            <RangeField baseValue={0} onChange={onChange} minValue={0} maxValue={72} step={2} label={'Border radius'} />
         ),
     },
 

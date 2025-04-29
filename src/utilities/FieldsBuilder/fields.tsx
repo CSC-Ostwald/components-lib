@@ -1,6 +1,6 @@
 import { Fields } from '@measured/puck';
 import { RangeField } from '../../components/CustomFields';
-import { theme } from '../Theme';
+import { theme } from '../../theme';
 
 export const fieldTemplates = {
     content: () => ({

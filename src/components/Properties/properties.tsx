@@ -1,4 +1,4 @@
-import { theme } from '../../utilities';
+import { theme } from '../../theme';
 import { Fields } from '@measured/puck';
 import { RangeField } from '../CustomFields';
 

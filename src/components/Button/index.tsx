@@ -1,6 +1,6 @@
 import { type Config } from '@measured/puck';
 import Button from './Button';
-import { properties } from '../Theme';
+import { properties } from '../Properties';
 import { ParentResolver } from '../../utilities/ParentResolver';
 
 const ButtonConfig = {

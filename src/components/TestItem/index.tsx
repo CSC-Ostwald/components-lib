@@ -1,7 +1,7 @@
 import { type Config } from '@measured/puck';
 import TestItem from './TestItem';
 import { ParentResolver } from '../../utilities/ParentResolver';
-import { properties } from '../Theme';
+import { properties } from '../Properties';
 
 const TestItemConfig = {
     fields: {

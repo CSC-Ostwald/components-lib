@@ -1,11 +1,11 @@
 @font-face {
     font-family: wedges;
-    src: url('src/components/Theme/fonts/Wedges.ttf');
+    src: url('../theme/fonts/Wedges.ttf');
 }
 
 @font-face {
     font-family: info-story;
-    src: url('src/components/Theme/fonts/Info_Story.ttf');
+    src: url('../theme/fonts/Info_Story.ttf');
 }
 
 * {

@@ -18,11 +18,11 @@ export const theme = {
     ],
     backgroundImage: [
         { label: 'Aucune', value: '' },
-        { label: 'Custom Vert', value: 'src/components/Theme/assets/customBackgroundGreen.svg' },
-        { label: 'Custom Brun', value: 'src/components/Theme/assets/customBackgroundBrown.svg' },
-        { label: 'Custom Bleu', value: 'src/components/Theme/assets/customBackgroundBlue.svg' },
-        { label: 'Custom Orange', value: 'src/components/Theme/assets/customBackgroundOrange.svg' },
-        { label: 'Custom Rouge', value: 'src/components/Theme/assets/customBackgroundRed.svg' },
+        { label: 'Custom Vert', value: 'src/theme/assets/customBackgroundGreen.svg' },
+        { label: 'Custom Brun', value: 'src/theme/assets/customBackgroundBrown.svg' },
+        { label: 'Custom Bleu', value: 'src/theme/assets/customBackgroundBlue.svg' },
+        { label: 'Custom Orange', value: 'src/theme/assets/customBackgroundOrange.svg' },
+        { label: 'Custom Rouge', value: 'src/theme/assets/customBackgroundRed.svg' },
     ],
     fonts: [
         { value: 'Roboto', label: 'Default' },

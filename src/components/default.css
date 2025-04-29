@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: a-day-without-sun;
-    src: url('src/components/Theme/fonts/A_day_without_sun.otf');
+    font-family: info-story;
+    src: url('src/components/Theme/fonts/Info_Story.ttf');
 }
 
 * {

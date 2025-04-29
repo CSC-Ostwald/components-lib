@@ -27,6 +27,6 @@ export const theme = {
     fonts: [
         { value: 'Roboto', label: 'Default' },
         { value: 'wedges', label: 'Titre' },
-        { value: 'a-day-without-sun', label: 'Texte' },
+        { value: 'info-story', label: 'Texte' },
     ],
 };

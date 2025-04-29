@@ -1,7 +1,6 @@
 import { type Config } from '@measured/puck';
 import { properties } from '../Theme';
 import Text from './Text';
-import { RangeField } from '../CustomFields';
 import { ParentResolver } from '../../utilities/ParentResolver';
 
 const TextConfig = {
@@ -9,6 +8,7 @@ const TextConfig = {
         content: properties.content,
         color: properties.color,
         backgroundColor: properties.backgroundColor,
+        backgroundImage: properties.backgroundImage,
         fontFamily: properties.fontFamily,
         fontSize: properties.fontSize,
         textAlign: properties.textAlign,
@@ -21,6 +21,7 @@ const TextConfig = {
         content: 'Votre texte ...',
         color: 'black',
         backgroundColor: 'transparent',
+        backgroundImage: '',
         fontFamily: 'Roboto',
         textAlign: 'left',
     },

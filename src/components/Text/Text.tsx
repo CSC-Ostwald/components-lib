@@ -4,6 +4,7 @@ import { BoxItem, type BoxItemType } from '../BoxItem';
 export interface TextProps extends PropsWithChildren, BoxItemType {
     color?: string;
     backgroundColor?: string;
+    backgroundImage?: string;
     fontFamily?: string;
     fontSize?: number;
     textAlign?: 'left' | 'right' | 'center' | 'justify';
@@ -15,6 +16,7 @@ export default function Text({
     children,
     color,
     backgroundColor,
+    backgroundImage,
     fontFamily,
     fontSize,
     textAlign,
@@ -28,6 +30,8 @@ export default function Text({
                 style={{
                     color,
                     backgroundColor,
+                    backgroundImage: `url(${backgroundImage})`,
+                    backgroundSize: '100% 100%',
                     fontFamily,
                     fontSize,
                     textAlign,

@@ -5,6 +5,7 @@ export interface ButtonProps extends PropsWithChildren, BoxItemType {
     href?: string;
     color?: string;
     backgroundColor?: string;
+    backgroundImage?: string;
     fontFamily?: string;
     fontSize?: number;
     margin?: number;
@@ -17,6 +18,7 @@ export default function Button({
     href,
     color,
     backgroundColor,
+    backgroundImage,
     fontFamily,
     fontSize,
     margin,
@@ -32,6 +34,8 @@ export default function Button({
                     style={{
                         color,
                         backgroundColor,
+                        backgroundImage: `url(${backgroundImage})`,
+                        backgroundSize: '100% 100%',
                         fontFamily,
                         fontSize,
                         margin,

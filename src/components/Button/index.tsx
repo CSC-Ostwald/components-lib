@@ -9,6 +9,7 @@ const ButtonConfig = {
         href: properties.href,
         color: properties.color,
         backgroundColor: properties.backgroundColor,
+        backgroundImage: properties.backgroundImage,
         fontFamily: properties.fontFamily,
         fontSize: properties.fontSize,
         margin: properties.margin,
@@ -21,6 +22,7 @@ const ButtonConfig = {
         content: 'Votre texte ...',
         color: 'black',
         backgroundColor: 'transparent',
+        backgroundImage: '',
         fontFamily: 'Roboto',
     },
 

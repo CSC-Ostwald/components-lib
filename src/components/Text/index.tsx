@@ -1,5 +1,5 @@
 import { type Config } from '@measured/puck';
-import { properties } from '../Theme/properties';
+import { properties } from '../Theme';
 import Text from './Text';
 import { RangeField } from '../CustomFields';
 import { ParentResolver } from '../../utilities/ParentResolver';
@@ -10,46 +10,10 @@ const TextConfig = {
         color: properties.color,
         backgroundColor: properties.backgroundColor,
         fontFamily: properties.fontFamily,
-        fontSize: {
-            type: 'custom',
-            render: ({ onChange }) => (
-                <RangeField
-                    baseValue={TextConfig.defaultProps.fontSize}
-                    onChange={onChange}
-                    minValue={6}
-                    maxValue={72}
-                    step={2}
-                    label={'Font size'}
-                />
-            ),
-        },
+        fontSize: properties.fontSize,
         textAlign: properties.textAlign,
-        margin: {
-            type: 'custom',
-            render: ({ onChange }) => (
-                <RangeField
-                    baseValue={TextConfig.defaultProps.margin}
-                    onChange={onChange}
-                    minValue={0}
-                    maxValue={72}
-                    step={2}
-                    label={'Margin'}
-                />
-            ),
-        },
-        padding: {
-            type: 'custom',
-            render: ({ onChange }) => (
-                <RangeField
-                    baseValue={TextConfig.defaultProps.padding}
-                    onChange={onChange}
-                    minValue={0}
-                    maxValue={72}
-                    step={2}
-                    label={'Padding'}
-                />
-            ),
-        },
+        margin: properties.margin,
+        padding: properties.padding,
     },
 
     defaultProps: {
@@ -58,9 +22,6 @@ const TextConfig = {
         color: 'black',
         backgroundColor: 'transparent',
         fontFamily: 'Roboto',
-        fontSize: 16,
-        margin: 0,
-        padding: 0,
         textAlign: 'left',
     },
 

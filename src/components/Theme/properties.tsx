@@ -32,6 +32,12 @@ export const properties = {
         label: 'Font family',
         options: theme.fonts,
     },
+    fontSize: {
+        type: 'custom',
+        render: ({ onChange }) => (
+            <RangeField baseValue={16} onChange={onChange} minValue={6} maxValue={72} step={2} label={'Font size'} />
+        ),
+    },
     textAlign: {
         type: 'select',
         label: 'Alignement',
@@ -56,6 +62,12 @@ export const properties = {
         type: 'custom',
         render: ({ onChange }) => (
             <RangeField baseValue={0} onChange={onChange} minValue={0} maxValue={72} step={2} label={'Margin'} />
+        ),
+    },
+    padding: {
+        type: 'custom',
+        render: ({ onChange }) => (
+            <RangeField baseValue={0} onChange={onChange} minValue={0} maxValue={72} step={2} label={'Padding'} />
         ),
     },
 

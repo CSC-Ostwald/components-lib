@@ -11,6 +11,6 @@ export const categories: Config['categories'] = {
     },
     button: {
         title: 'Boutons',
-        components: ['Button'],
+        components: ['Button', 'Icon'],
     },
 };

@@ -1,7 +1,9 @@
 import { BoxItem, type BoxItemType } from '../BoxItem';
+import { icons } from './icons';
 import type { PropsWithChildren } from 'react';
 
 export interface BaseIconProps extends PropsWithChildren, BoxItemType {
+    iconName?: keyof typeof icons;
     minWidth?: number;
     minHeight?: number;
 }

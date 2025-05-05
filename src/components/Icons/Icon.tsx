@@ -1,22 +1,20 @@
 import { BoxItem, type BoxItemType } from '../BoxItem';
 import { icons } from './icons';
-import type { PropsWithChildren } from 'react';
 
-export interface IconProps extends PropsWithChildren, BoxItemType {
+export interface IconProps extends BoxItemType {
     iconName?: keyof typeof icons;
-    minWidth?: number;
-    minHeight?: number;
+    width?: number;
 }
 
-export default function Icon({ children, iconName, minWidth, minHeight, ...BoxItemProps }: IconProps) {
+export default function Icon({ iconName, width, ...BoxItemProps }: IconProps) {
     const IconComponent = iconName ? icons[iconName] : null;
 
     return (
         <BoxItem {...BoxItemProps}>
             <div
                 style={{
-                    minWidth,
-                    minHeight,
+                    width,
+                    placeContent: 'center',
                 }}
             >
                 {IconComponent ? <IconComponent /> : null}

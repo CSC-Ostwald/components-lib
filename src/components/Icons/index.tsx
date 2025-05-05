@@ -6,13 +6,13 @@ import { ParentResolver } from '../../utilities/ParentResolver';
 const IconConfig = {
     fields: {
         iconName: properties.iconName,
-        minWidth: properties.minWidth,
-        minHeight: properties.minHeight,
+        width: properties.iconSize,
     },
 
     defaultProps: {
         ...ParentResolver.defaultProps(),
         iconName: 'calendar',
+        width: 16,
     },
 
     inline: true,

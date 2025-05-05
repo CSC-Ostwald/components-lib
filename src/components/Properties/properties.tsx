@@ -62,6 +62,22 @@ export const properties = {
         type: 'number',
         label: 'Hauteur minimum',
     },
+    maxWidth: {
+        type: 'number',
+        label: 'Largeur maximum',
+    },
+    maxHeight: {
+        type: 'number',
+        label: 'Hauteur maximum',
+    },
+    width: {
+        type: 'number',
+        label: 'Largeur',
+    },
+    height: {
+        type: 'number',
+        label: 'Hauteur',
+    },
     margin: {
         type: 'custom',
         render: ({ onChange }) => (
@@ -114,7 +130,17 @@ export const properties = {
     // ICONS
     iconName: {
         type: 'select',
-        label: 'Icon',
+        label: 'Icone',
         options: theme.iconName,
+    },
+    iconSize: {
+        type: 'select',
+        label: "Taille d'icone",
+        options: [
+            { label: 'Mini', value: 16 },
+            { label: 'Petite', value: 32 },
+            { label: 'Moyenne', value: 64 },
+            { label: 'Grande', value: 128 },
+        ],
     },
 } as const satisfies Fields;

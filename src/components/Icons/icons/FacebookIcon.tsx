@@ -2,10 +2,8 @@ export default function FacebookIcon() {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="500"
             zoomAndPan="magnify"
             viewBox="0 0 375 374.999991"
-            height="500"
             preserveAspectRatio="xMidYMid meet"
             version="1.0"
         >

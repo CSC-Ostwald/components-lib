@@ -29,4 +29,11 @@ export const theme = {
         { value: 'wedges', label: 'Titre' },
         { value: 'info-story', label: 'Texte' },
     ],
+    iconName: [
+        { label: 'Calendrier', value: 'calendar' },
+        { label: 'Instagram', value: 'instagram' },
+        { label: 'Facebook', value: 'facebook' },
+        { label: 'Logo', value: 'logo' },
+        { label: 'Maps', value: 'maps' },
+    ],
 };

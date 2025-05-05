@@ -5,17 +5,7 @@ import { ParentResolver } from '../../utilities/ParentResolver';
 
 const IconConfig = {
     fields: {
-        iconName: {
-            type: 'select',
-            label: 'Icon',
-            options: [
-                { label: 'Calendrier', value: 'calendar' },
-                { label: 'Instagram', value: 'instagram' },
-                { label: 'Facebook', value: 'facebook' },
-                { label: 'Logo', value: 'logo' },
-                { label: 'Maps', value: 'maps' },
-            ],
-        },
+        iconName: properties.iconName,
         minWidth: properties.minWidth,
         minHeight: properties.minHeight,
     },

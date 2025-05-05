@@ -110,4 +110,11 @@ export const properties = {
         type: 'number',
         label: 'Nombre de lignes',
     },
+
+    // ICONS
+    iconName: {
+        type: 'select',
+        label: 'Icon',
+        options: theme.iconName,
+    },
 } as const satisfies Fields;

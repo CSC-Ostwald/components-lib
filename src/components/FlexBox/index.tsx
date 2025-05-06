@@ -5,13 +5,11 @@ import { properties } from '../Properties';
 export default {
     fields: {
         flexDirection: properties.flexDirection,
-        justifyContent: properties.justifyContent,
         backgroundImage: properties.backgroundImage,
     },
 
     defaultProps: {
         flexDirection: 'row',
-        justifyContent: 'start',
         backgroundImage: '',
     },
 

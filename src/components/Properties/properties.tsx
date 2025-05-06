@@ -106,6 +106,14 @@ export const properties = {
             { label: 'Ligne', value: 'row' },
         ],
     },
+    flexGrow: {
+        type: 'number',
+        label: 'Flex grow',
+    },
+    flexShrink: {
+        type: 'number',
+        label: 'Flex shrink',
+    },
     justifyContent: {
         type: 'select',
         label: 'Alignement',
@@ -114,6 +122,26 @@ export const properties = {
             { label: 'Center', value: 'center' },
             { label: 'Space between', value: 'space-between' },
             { label: 'Space around', value: 'space-around' },
+        ],
+    },
+    alignSelf: {
+        type: 'select',
+        label: 'Alignement dans son parent',
+        options: [
+            { label: 'Start', value: 'start' },
+            { label: 'End', value: 'end' },
+            { label: 'Stretch', value: 'stretch' },
+            { label: 'Center', value: 'center' },
+        ],
+    },
+    placeContent: {
+        type: 'select',
+        label: 'Placement du contenu',
+        options: [
+            { label: 'Start', value: 'start' },
+            { label: 'End', value: 'end' },
+            { label: 'Stretch', value: 'stretch' },
+            { label: 'Center', value: 'center' },
         ],
     },
 

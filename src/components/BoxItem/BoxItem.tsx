@@ -27,7 +27,7 @@ export default function BoxItem({
                 display: 'flex',
                 gridColumn: `span ${columns}`,
                 gridRow: `span ${rows}`,
-                backgroundColor: '#F0F',
+                backgroundColor: '#F0F', // TEST COLOR
                 flexGrow,
                 flexShrink,
                 alignSelf,

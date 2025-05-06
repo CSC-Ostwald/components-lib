@@ -4,6 +4,7 @@ export default class ParentResolver {
     static resolve = (data, { parent, fields }) => {
         if (parent?.type === 'Grid') {
             return {
+                boxHelper: properties.boxHelper,
                 columns: properties.columns,
                 rows: properties.rows,
                 ...fields,
@@ -11,6 +12,7 @@ export default class ParentResolver {
         }
         if (parent?.type === 'FlexBox') {
             return {
+                boxHelper: properties.boxHelper,
                 flexGrow: properties.flexGrow,
                 flexShrink: properties.flexShrink,
                 alignSelf: properties.alignSelf,
@@ -23,6 +25,7 @@ export default class ParentResolver {
 
     static defaultProps = () => {
         return {
+            boxHelper: 'none',
             flexGrow: 1,
             flexShrink: 1,
             alignSelf: 'start',

@@ -171,4 +171,17 @@ export const properties = {
             { label: 'Grande', value: 128 },
         ],
     },
+
+    // HELPERS
+    boxHelper: {
+        type: 'radio',
+        label: 'Box helper',
+        options: [
+            { label: 'Off', value: 'none' },
+            {
+                label: 'On',
+                value: 'repeating-linear-gradient( 45deg, #453c1d, #453c1d 3px, #f5d362 1px, #f5d362 12px )',
+            },
+        ],
+    },
 } as const satisfies Fields;

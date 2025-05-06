@@ -180,7 +180,7 @@ export const properties = {
             { label: 'Off', value: 'none' },
             {
                 label: 'On',
-                value: 'repeating-linear-gradient( 45deg, #453c1d, #453c1d 3px, #f5d362 1px, #f5d362 12px )',
+                value: 'repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) 3px, rgba(255, 255, 0, 0.4) 3px, rgba(255, 255, 0, 0.4) 12px)',
             },
         ],
     },

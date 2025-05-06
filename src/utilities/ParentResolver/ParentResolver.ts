@@ -11,10 +11,9 @@ export default class ParentResolver {
             return {
                 flexGrow: { type: 'number' },
                 flexShrink: { type: 'number' },
-                flexBasis: { type: 'text' },
                 alignSelf: {
                     type: 'select',
-                    label: 'Alignement vertical',
+                    label: 'Alignement dans son parent',
                     options: [
                         { label: 'Start', value: 'start' },
                         { label: 'End', value: 'end' },
@@ -22,9 +21,9 @@ export default class ParentResolver {
                         { label: 'Center', value: 'center' },
                     ],
                 },
-                JustifySelf: {
+                placeContent: {
                     type: 'select',
-                    label: 'Alignement horizontal',
+                    label: 'Placement du contenu',
                     options: [
                         { label: 'Start', value: 'start' },
                         { label: 'End', value: 'end' },
@@ -42,9 +41,8 @@ export default class ParentResolver {
         return {
             flexGrow: 1,
             flexShrink: 1,
-            flexBasis: 'auto',
             alignSelf: 'start',
-            justifySelf: 'start',
+            placeContent: 'start',
         };
     };
 }

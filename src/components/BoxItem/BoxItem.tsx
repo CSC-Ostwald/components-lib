@@ -6,8 +6,8 @@ export interface BoxItemType extends PropsWithChildren {
     rows?: number;
     flexGrow?: number;
     flexShrink?: number;
-    flexBasis?: string;
-    alignSelf?: string;
+    alignSelf?: 'start' | 'center' | 'end' | 'stretch';
+    placeContent?: 'start' | 'center' | 'end' | 'stretch';
 }
 
 export default function BoxItem({
@@ -17,8 +17,8 @@ export default function BoxItem({
     rows,
     flexShrink,
     flexGrow,
-    flexBasis,
     alignSelf,
+    placeContent,
 }: BoxItemType) {
     return (
         <div
@@ -27,12 +27,11 @@ export default function BoxItem({
                 display: 'flex',
                 gridColumn: `span ${columns}`,
                 gridRow: `span ${rows}`,
-                placeContent: 'center',
                 backgroundColor: '#F0F',
                 flexGrow,
                 flexShrink,
-                flexBasis,
                 alignSelf,
+                placeContent,
             }}
         >
             {children}

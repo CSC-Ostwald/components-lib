@@ -41,7 +41,6 @@ export default function Button({
                     padding,
                     borderRadius,
                     textDecoration: 'none',
-                    placeContent: 'center',
                 }}
             >
                 {children}

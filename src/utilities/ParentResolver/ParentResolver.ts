@@ -14,7 +14,17 @@ export default class ParentResolver {
                 flexBasis: { type: 'text' },
                 alignSelf: {
                     type: 'select',
-                    label: 'Alignement',
+                    label: 'Alignement vertical',
+                    options: [
+                        { label: 'Start', value: 'start' },
+                        { label: 'End', value: 'end' },
+                        { label: 'Stretch', value: 'stretch' },
+                        { label: 'Center', value: 'center' },
+                    ],
+                },
+                JustifySelf: {
+                    type: 'select',
+                    label: 'Alignement horizontal',
                     options: [
                         { label: 'Start', value: 'start' },
                         { label: 'End', value: 'end' },

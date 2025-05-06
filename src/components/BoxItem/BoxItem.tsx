@@ -27,6 +27,8 @@ export default function BoxItem({
                 display: 'flex',
                 gridColumn: `span ${columns}`,
                 gridRow: `span ${rows}`,
+                placeContent: 'center',
+                backgroundColor: '#F0F',
                 flexGrow,
                 flexShrink,
                 flexBasis,

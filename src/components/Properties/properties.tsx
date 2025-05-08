@@ -8,7 +8,7 @@ export const properties = {
         type: 'textarea',
         label: 'Content',
     },
-    href: {
+    url: {
         type: 'text',
         label: 'URL',
     },

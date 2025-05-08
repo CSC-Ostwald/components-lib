@@ -5,12 +5,14 @@ import { ParentResolver } from '../../utilities/ParentResolver';
 
 const IconConfig = {
     fields: {
+        url: properties.url,
         iconName: properties.iconName,
         width: properties.iconSize,
     },
 
     defaultProps: {
         ...ParentResolver.defaultProps(),
+        url: '',
         iconName: 'calendar',
         width: 16,
     },

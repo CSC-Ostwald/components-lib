@@ -6,7 +6,7 @@ import { ParentResolver } from '../../utilities/ParentResolver';
 const ButtonConfig = {
     fields: {
         content: properties.content,
-        href: properties.href,
+        url: properties.url,
         color: properties.color,
         backgroundColor: properties.backgroundColor,
         backgroundImage: properties.backgroundImage,

@@ -2,7 +2,7 @@ import type { PropsWithChildren } from 'react';
 import { BoxItem, type BoxItemType } from '../BoxItem';
 
 export interface ButtonProps extends PropsWithChildren, BoxItemType {
-    href?: string;
+    url?: string;
     color?: string;
     backgroundColor?: string;
     backgroundImage?: string;
@@ -15,7 +15,7 @@ export interface ButtonProps extends PropsWithChildren, BoxItemType {
 
 export default function Button({
     children,
-    href,
+    url,
     color,
     backgroundColor,
     backgroundImage,
@@ -29,7 +29,7 @@ export default function Button({
     return (
         <BoxItem {...boxItemProps}>
             <a
-                href={href}
+                href={url}
                 style={{
                     color,
                     backgroundColor,

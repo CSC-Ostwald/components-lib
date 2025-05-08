@@ -11,7 +11,7 @@ export default function Icon({ iconName, width, url, ...BoxItemProps }: IconProp
     const IconComponent = iconName ? icons[iconName] : null;
 
     const onClick = () => {
-        console.log(`Icon clicked: ${iconName}`);
+        window.location.href = url || '';
     };
 
     return (

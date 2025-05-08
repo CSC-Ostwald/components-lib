@@ -5,7 +5,7 @@ const meta: Meta<typeof Button> = {
     title: 'Components/Button',
     component: Button,
     argTypes: {
-        href: { control: 'text' },
+        url: { control: 'text' },
         color: { control: 'color' },
         backgroundColor: { control: 'color' },
         fontFamily: { control: 'text' },
@@ -21,7 +21,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        href: 'https://example.com',
+        url: 'https://example.com',
         color: '#ffffff',
         backgroundColor: '#007bff',
         fontSize: 16,

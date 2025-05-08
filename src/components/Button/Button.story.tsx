@@ -8,7 +8,6 @@ const meta: Meta<typeof Button> = {
         href: { control: 'text' },
         color: { control: 'color' },
         backgroundColor: { control: 'color' },
-        backgroundImage: { control: 'text' },
         fontFamily: { control: 'text' },
         fontSize: { control: 'number' },
         margin: { control: 'number' },

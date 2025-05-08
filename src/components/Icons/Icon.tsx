@@ -17,10 +17,11 @@ export default function Icon({ iconName, width, url, ...BoxItemProps }: IconProp
     return (
         <BoxItem {...BoxItemProps}>
             <div
-                onClick={onClick}
+                onClick={url ? onClick : undefined}
                 style={{
                     width,
                     placeContent: 'center',
+                    cursor: url ? 'pointer' : 'default',
                 }}
             >
                 {IconComponent ? <IconComponent /> : null}

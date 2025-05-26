@@ -12,7 +12,7 @@ export interface TextProps extends PropsWithChildren, BoxItemType {
     padding?: number;
 }
 
-export default function Text({
+export function Text({
     children,
     color,
     backgroundColor,

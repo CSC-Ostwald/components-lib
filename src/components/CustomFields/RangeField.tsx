@@ -9,7 +9,7 @@ export interface RangeFieldProps {
     label?: string;
 }
 
-export default function RangeField({ baseValue, onChange, minValue, maxValue, step, label }: RangeFieldProps) {
+export function RangeField({ baseValue, onChange, minValue, maxValue, step, label }: RangeFieldProps) {
     const [internalValue, setInternalValue] = React.useState(baseValue);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {

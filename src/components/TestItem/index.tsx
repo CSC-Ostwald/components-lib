@@ -1,9 +1,9 @@
 import { type Config } from '@measured/puck';
-import TestItem from './TestItem';
-import { ParentResolver } from '../../utilities/ParentResolver';
+import { TestItem } from './TestItem';
+import { ParentResolver } from '../../utilities';
 import { properties } from '../Properties';
 
-const TestItemConfig = {
+export const TestItemConfig = {
     fields: {
         minWidth: properties.minWidth,
         minHeight: properties.minHeight,
@@ -21,5 +21,3 @@ const TestItemConfig = {
 
     render: ({ puck, ...fields }) => <TestItem ref={puck.dragRef} {...fields} />,
 } satisfies Config['components']['key'];
-
-export default TestItemConfig;

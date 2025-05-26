@@ -1,9 +1,9 @@
 import { type Config } from '@measured/puck';
-import Button from './Button';
+import { Button } from './Button';
 import { properties } from '../Properties';
-import { ParentResolver } from '../../utilities/ParentResolver';
+import { ParentResolver } from '../../utilities';
 
-const ButtonConfig = {
+export const ButtonConfig = {
     fields: {
         content: properties.content,
         url: properties.url,
@@ -35,5 +35,3 @@ const ButtonConfig = {
         </Button>
     ),
 } satisfies Config['components']['key'];
-
-export default ButtonConfig;

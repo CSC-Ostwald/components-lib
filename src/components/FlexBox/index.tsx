@@ -1,8 +1,8 @@
 import { type Config } from '@measured/puck';
-import FlexBox from './FlexBox';
+import { FlexBox } from './FlexBox';
 import { properties } from '../Properties';
 
-export default {
+export const FlexBoxConfig = {
     fields: {
         flexDirection: properties.flexDirection,
         backgroundImage: properties.backgroundImage,

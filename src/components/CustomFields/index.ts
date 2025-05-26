@@ -1,1 +1,1 @@
-export { default as RangeField } from './RangeField';
+export { RangeField } from './RangeField';

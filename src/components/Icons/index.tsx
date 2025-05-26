@@ -1,9 +1,9 @@
 import { type Config } from '@measured/puck';
-import Icon from './Icon';
+import { Icon } from './Icon';
 import { properties } from '../Properties';
-import { ParentResolver } from '../../utilities/ParentResolver';
+import { ParentResolver } from '../../utilities';
 
-const IconConfig = {
+export const IconConfig = {
     fields: {
         url: properties.url,
         iconName: properties.iconName,
@@ -22,5 +22,3 @@ const IconConfig = {
 
     render: ({ puck, ...fields }) => <Icon ref={puck.dragRef} {...fields} />,
 } satisfies Config['components']['key'];
-
-export default IconConfig;

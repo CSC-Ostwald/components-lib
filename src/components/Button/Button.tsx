@@ -13,7 +13,7 @@ export interface ButtonProps extends PropsWithChildren, BoxItemType {
     borderRadius?: number;
 }
 
-export default function Button({
+export function Button({
     children,
     url,
     color,

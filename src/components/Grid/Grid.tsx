@@ -6,7 +6,7 @@ interface GridProps {
     backgroundImage?: string;
 }
 
-export default function Grid({ columns, rows, backgroundImage }: GridProps) {
+export function Grid({ columns, rows, backgroundImage }: GridProps) {
     return (
         <DropZone
             zone="grid-zone"

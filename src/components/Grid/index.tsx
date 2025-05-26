@@ -1,8 +1,8 @@
 import { type Config } from '@measured/puck';
 import { properties } from '../Properties';
-import Grid from './Grid';
+import { Grid } from './Grid';
 
-export default {
+export const GridConfig = {
     fields: {
         columns: properties.columns,
         rows: properties.rows,

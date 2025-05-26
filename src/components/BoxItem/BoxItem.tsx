@@ -11,7 +11,7 @@ export interface BoxItemType extends PropsWithChildren {
     boxHelper?: string;
 }
 
-export default function BoxItem({
+export function BoxItem({
     children,
     ref,
     columns,

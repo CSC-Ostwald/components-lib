@@ -1,6 +1,6 @@
 import { properties } from '../../components/Properties';
 
-export default class ParentResolver {
+export class ParentResolver {
     static resolve = (data, { parent, fields }) => {
         if (parent?.type === 'Grid') {
             return {

@@ -1,1 +1,1 @@
-export * from './ParentResolver';
+export { ParentResolver } from './ParentResolver';

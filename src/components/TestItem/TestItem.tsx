@@ -7,13 +7,13 @@ export interface TestItemProps extends PropsWithChildren, BoxItemType {
     margin?: number;
 }
 
-export default function TestItem({ children, minHeight, minWidth, margin, ...boxItemProps }: TestItemProps) {
+export function TestItem({ children, minHeight, minWidth, margin, ...boxItemProps }: TestItemProps) {
     return (
         <BoxItem {...boxItemProps}>
             <div
                 style={{
-                    backgroundColor: '#F0F',
-                    border: '3px solid #000',
+                    backgroundColor: '#F0F123',
+                    border: '2px solid #000',
                     minWidth,
                     minHeight,
                     margin,

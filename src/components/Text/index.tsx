@@ -1,9 +1,9 @@
 import { type Config } from '@measured/puck';
 import { properties } from '../Properties';
-import Text from './Text';
-import { ParentResolver } from '../../utilities/ParentResolver';
+import { Text } from './Text';
+import { ParentResolver } from '../../utilities';
 
-const TextConfig = {
+export const TextConfig = {
     fields: {
         content: properties.content,
         color: properties.color,
@@ -35,5 +35,3 @@ const TextConfig = {
         </Text>
     ),
 } satisfies Config['components']['key'];
-
-export default TextConfig;

@@ -7,7 +7,7 @@ export interface IconProps extends BoxItemType {
     width?: number;
 }
 
-export default function Icon({ iconName, width, url, ...BoxItemProps }: IconProps) {
+export function Icon({ iconName, width, url, ...BoxItemProps }: IconProps) {
     const IconComponent = iconName ? icons[iconName] : null;
 
     const onClick = () => {

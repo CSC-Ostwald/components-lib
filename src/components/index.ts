@@ -1,8 +1,8 @@
-export { default as Text } from './Text';
-export { default as Button } from './Button';
-export { default as Grid } from './Grid';
-export { default as FlexBox } from './FlexBox';
-export { default as TestItem } from './TestItem';
-export { default as Icon } from './Icons';
+export { TextConfig } from './Text/index';
+export { ButtonConfig } from './Button/index';
+export { GridConfig } from './Grid/index';
+export { FlexBoxConfig } from './FlexBox/index';
+export { TestItemConfig } from './TestItem/index';
+export { IconConfig } from './Icons/index';
 
 export { BoxItem } from './BoxItem';

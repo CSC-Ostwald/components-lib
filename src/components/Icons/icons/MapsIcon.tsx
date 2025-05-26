@@ -1,4 +1,4 @@
-export default function MapsIcon() {
+export function MapsIcon() {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

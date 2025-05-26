@@ -5,7 +5,7 @@ export interface FlexBoxProps {
     backgroundImage?: string;
 }
 
-export default function FlexBox({ flexDirection, backgroundImage }: FlexBoxProps) {
+export function FlexBox({ flexDirection, backgroundImage }: FlexBoxProps) {
     return (
         <DropZone
             zone="flex-zone"
